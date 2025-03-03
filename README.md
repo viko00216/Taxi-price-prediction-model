@@ -1,21 +1,21 @@
-## Taxi Price- Prediction Model
+# Taxi Price- Prediction Model
 The aim of this report is to present the development and analysis of a taxi price prediction model. The model seeks to predict the trip price of a taxi ride based on several key factors including distance, traffic conditions, weather, base fare, and trip duration in minutes. This report will outline the importance of each independent variable and discuss how they influence the predicted taxi fare.
 
-# Objective
+## Objective
 The primary objective of the model is to predict the trip price based on input features that are typically recorded during a taxi trip. By incorporating multiple factors, the model provides a comprehensive approach to estimating the cost of a taxi ride.
 
-# Independent Variables:
+## Independent Variables:
 - Distance: The total distance of the trip, usually measured in miles or kilometers.
 -	Traffic Conditions: This variable reflects the impact of traffic congestion, which can either increase or decrease travel time and, consequently, trip price.
 -	Weather: Weather conditions can influence traffic patterns, driver behavior, and the overall comfort and safety of the trip.
 -	Base Fare: The initial fare for the ride, which is set by the taxi service as a fixed charge before additional charges are applied.
 -	Trip Duration: The total time taken for the trip, typically measured in minutes.
 
-# Dependent Variables
+## Dependent Variables
 -	Trip Price: The total cost of the taxi ride, which is influenced by the above variables.
 
 
-# Data Collection
+## Data Collection
 The model relies on data collected from actual taxi trips. The data includes the following features:
 -	Distance: Measured in kilometers or miles.
 -	Traffic Conditions: Categorical data (e.g., light, moderate, heavy) or numerical data (e.g., average speed).
@@ -24,7 +24,7 @@ The model relies on data collected from actual taxi trips. The data includes the
 -	Trip Duration: The length of the trip measured in minutes.
 -	Trip Price: The total fare for the trip, including any additional charges based on the above variables.
 
-# Feature Engineering
+## Feature Engineering
 To enhance the model's ability to predict trip prices accurately, the following transformations and considerations were applied to the independent variables:
 
 Distance:
@@ -42,7 +42,7 @@ Trip Duration:
 -	Trip duration is a direct indicator of the time spent in the taxi. The longer the trip, the higher the fare, assuming that the base fare and distance are relatively fixed.
 -	Duration is usually measured in minutes and directly correlates with the overall price of the trip.
 
-# Model Development
+## Model Development
 I developed a predictive model using machine learning techniques such as Linear Regression and Decision Trees to analyze the relationship between the independent variables and the target variable, trip price.
 
 Model Selection:
@@ -54,7 +54,7 @@ Model Evaluation:
 -	R-Squared (R²): This indicates the proportion of the variance in the dependent variable (trip price) that is predictable from the independent variables.
 -	The model is 80% accurate.
 
-# Results
+## Results
 The model demonstrated the following key findings:
 -	Distance had the most significant positive correlation of 0.86 with trip price, as expected. An increase in distance led to a higher predicted price.
 -	Traffic Conditions showed a low positive effect on trip price. Higher traffic congestion caused a slight increase in trip duration, which in turn increased the fare.
@@ -63,20 +63,20 @@ The model demonstrated the following key findings:
 -	Trip Duration had a low significant impact on price prediction.
 
 
-# Conclusion
+## Conclusion
 The taxi price prediction model effectively estimates the cost of a taxi ride by taking into account distance, traffic conditions, weather, base fare, and trip duration in minutes. Key findings highlight that trip duration and traffic conditions are among the most significant predictors of the trip price, with weather and distance also contributing to the model's accuracy.
 Future work could focus on further tuning the model by exploring additional features such as driver behavior, time of day, or ride-sharing options. Moreover, using real-time data such as GPS tracking and live weather updates could further enhance the accuracy and reliability of the model.
 
-# Recommendations:
+## Recommendations:
 -	Taxi companies should consider traffic conditions and the distance covered when providing fare estimates to customers.
 -	The model could be integrated into ride-hailing applications to offer users real-time price predictions based on current conditions.
 
 
 
-# How to use the model
+## How to use the model
 This model is used to predict taxi trip price based on five various independent variables such as distance , traffic conditions, weather, base fares, and duration in minutes. It provides realistic synthetic predictions for regression tasks, offering a unique opportunity to explore pricing trends in the taxi industry.
 
-# The Model
+## The Model
 Y = B0 + B1X1 + B2X2 + B3X3 + B4X4 + B5X5 
 - B0 = is the intercept(-13.65)
 - B1 = distance
